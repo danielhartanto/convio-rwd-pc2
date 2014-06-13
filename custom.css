@@ -1,0 +1,1746 @@
+/*
+.custom-left-nav {
+position: relative;
+left: -105px;
+top: -46px;
+float: left;
+width: 100px;
+height: 400px;
+margin-bottom: -400px;
+border: 1px solid black;
+}
+*/
+#bd-org-html ul li {
+    list-style-type: disc;
+}
+
+#bd-org-html ol li {
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+#bd-org-html p {
+    padding: .5em 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #FFFFF;
+    background: url(../images/custom/tc2015_body_bg.jpg) repeat-x top left;
+    margin: 0;
+    padding: 0;
+/*min-height:100%;*/
+/* allowing the seamless bg use min-height instead of height for body, and height for html -- not compatible with ie8 and 7 will cause the resp menu not to toggle*/
+    min-height: 1625px;
+    height: 100%;
+    font-size: 14px !important;
+}
+
+body,p,span,li,a,h1,h2,h3,h4 {
+    font-family: Montserrat,sans-serif;
+}
+
+b,strong {
+    font-weight: 700 !important;
+}
+
+h1 {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+}
+
+h2 {
+    font-size: 25px !important;
+    font-weight: 700 !important;
+}
+
+h3 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+a {
+    color: #C41230;
+}
+
+a:hover,a:visited {
+    color: #C41230;
+}
+
+.label {
+    color: #C41230;
+}
+
+.hidden-form {
+    display: none !important;
+}
+
+#doc2,#doc,#doc3,#doc4,.yui-t1,.yui-t2,.yui-t3,.yui-t4,.yui-t5,.yui-t6,.yui-t7 {
+    max-width: 1024px;
+    min-width: 320px;
+    width: 100% !important;
+/*min-height:1418px;*/
+/*min-height:1625px;*/
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0;
+}
+
+#yui-history-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}
+
+#yui-main {
+    margin-right: 0 !important;
+}
+
+/*SO Sidebar */
+#SOADASidebar {
+    max-width: 240px;
+    width: 100%;
+    min-height: 300px;
+    float: left;
+}
+
+#yui-main {
+    max-width: 720px;
+    min-width: 320px;
+    margin-left: 10px;
+    float: left;
+}
+
+input[type=text],#email-addresses {
+    max-width: 200px;
+    min-width: 200px;
+    width: 95%;
+}
+
+/*for that popup including session expires warning*/
+.yui-overlay,.yui-panel-container {
+/*background-color:#D8FBFD;*/
+/*background-color:#F8F8F8;*/
+    background-color: #ECECEC;
+/*max-width:500px !important;*/
+/*this should address email preview width*/
+    max-width: 670px !important;
+    min-width: 300px !important;
+}
+
+.yui-overlay {
+    margin: 0;
+    width: 98% !important;
+}
+
+.yui-panel-container {
+    border: #000 solid 1px;
+    padding: 5px;
+}
+
+.yui-button button,#content button {
+    background-color: #C41230 !important;
+    color: #FFF !important;
+    border-radius: 5px !important;
+    padding: 5px 10px !important;
+    margin: 2px !important;
+/*text-transform:lowercase !important;*/
+}
+
+/*email sent status etc */
+.yui-skin-ux .page-form .failure-message,.yui-skin-ux .page-form .success-message,.yui-skin-ux .success-message,.yui-skin-ux .failure-message {
+    background: url(../../../images/check.gif) no-repeat scroll .7em center #E7FFF1;
+    border: 1px solid #6EB190;
+    color: #356E4B;
+    font-size: 1em;
+    margin-bottom: .75em;
+    padding: .3em .6em .3em 2.7em;
+    max-width: 480px;
+}
+
+#permalink_block,#teampage_permalink_block,#companypage_permalink_block,#gift-add-content {
+    max-width: 480px;
+}
+
+#email-content,#report-content,#personalpage-content,#membership-content,#teampage-content,#companypage-content,#gift-content,#teammates-content,#survey-content,#tenting-content,#addressbookimport-content,#dashboard-report-content,#layout-block {
+    padding: 10px;
+}
+
+#email-content {
+    padding-bottom: 70px;
+}
+
+/*OFFLINE DONATION*/
+#msg_cat_gift_label {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/*email layout li */
+#layout-list li {
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.desc label {
+    margin-left: 10px;
+}
+
+/*team page MCE*/
+#teampage_rich_text_block,#companypage_rich_text_block {
+    padding-top: 70px;
+}
+
+/*HEADER*/
+#hd {
+/*background:url(../images/custom/header_bg.gif) no-repeat top left;*/
+/*height:100%;*/
+    min-height: 160px;
+    max-width: 1024px;
+    min-width: 320px;
+}
+
+/*default welcome user and team name default and help */
+#hd-small-left,#hd-small-right,#hd-etc {
+    display: none;
+}
+
+/*CW LOGO*/
+#CWLOGO {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    height: 160px;
+    width: 240px;
+    padding: 0;
+}
+
+/*CW MYCENTER*/
+#CWMYCENTERREG {
+    position: absolute;
+    left: 742px;
+    top: 0;
+    width: 162px;
+    height: 81px;
+    background: url(../images/custom/mycenter_bg.png) no-repeat top left;
+/*display:block;*/
+    display: none;
+    text-align: center;
+}
+
+/*CWWELCOMEUSR*/
+#CWWELCOMEUSR {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*CWHELPSHAREMOB and #CWHELPSHAREREG*/
+#CWHELPSHAREMOB,#CWHELPSHAREMOB2,#CWHELPSHAREMOB3,#CWHELPSHAREMOB4,#CWHELPSHAREMOB5 {
+    display: none;
+}
+
+#CWHELPSHAREREG {
+    position: absolute;
+    width: 380px;
+    top: 178px;
+    left: 630px;
+    display: none;
+}
+
+/*NAV BAR*/
+#CWMAINNAV {
+    width: 730px;
+    position: absolute;
+    left: 250px;
+/*top:32px;*/
+/*top:52px;*/
+    top: 70px;
+    z-index: 1000;
+}
+
+#hd-nav li {
+    float: left;
+    border-top: none;
+}
+
+#dashboard-nav-link,#email-nav-link,#report-nav-link,#fundraising-tools-hdnav,#updateall-nav-link {
+/*border-right:#820E21 solid 1px;*/
+}
+
+#submenu_updt_pages li {
+    border-right: none !important;
+}
+
+#hd-nav a {
+    display: block;
+    text-align: center;
+    min-width: 120px;
+    padding-top: 15px;
+    padding-left: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 700;
+    height: 50px;
+/*background-image:url(../images/custom/nav_bg_strip.gif);
+background-repeat:repeat-x;*/
+    background-color: #000;
+    border-top: #CACACA solid 5px;
+    color: #FFF;
+}
+
+#hd-nav ul li a {
+    background-image: none;
+    border-top: none;
+    background-color: /*#CCC*/
+#C41230;
+/*border-bottom:#999 solid 1px;*/
+    color: #FFF !important;
+}
+
+#hd-nav a:hover {
+/*background-image:url(../images/custom/nav_bg_strip_hover.gif);
+	background-repeat:repeat-x;*/
+    background-image: none;
+    background-color: /*#EBEBEB*/
+#000;
+/*color:#676767;*/
+/*color:#333333;*/
+    color: #FFF;
+    border-top: #C41230 solid 5px;
+}
+
+#hd-nav ul li a:hover {
+/*background-image:none;
+background-color:#FFF;
+color:#676767;*/
+    border-top: none !important;
+}
+
+#CWMENUTOGGLE,#CWMYCENTERMOB {
+    display: none;
+}
+
+/*hidden TR Data Conditional */
+.hTRData {
+    display: none;
+}
+
+/*BD*/
+#bd {
+/*padding:10px;*/
+/*height:100%;*/
+    min-height: 1258px;
+    max-width: 1024px;
+    min-width: 320px;
+}
+
+/*SIDEBAR AND CONTENT*/
+#content {
+    float: none;
+    display: block;
+    clear: both;
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+#sidebar {
+    display: none;
+    float: none;
+/*display:block;*/
+    clear: both;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+#sidebar h3 {
+    font-size: 13px !important;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+/*OVERVIEW HOME*/
+#msg_cat_overview_label,#what-next-answer {
+    display: none;
+}
+
+#msg_cat_progress_bar_title {
+    padding-bottom: 10px;
+}
+
+#bd-personal-progress {
+    padding: 10px;
+}
+
+#progress-amt-raised,#progress-gift-aid-match,#progress-goal,#progress-percent,#progress-days-left,#team-progress-amt-raised,#team-progress-percent,#team-progress-team-goal,#team-progress-days-left {
+    float: left;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#progress-days-left,#team-progress-days-left {
+    display: none;
+}
+
+#fundraising-progress-image,#team-fundraising-progress-image,#company-fundraising-progress-image {
+    max-width: 500px;
+    min-width: 300px;
+    min-height: 82px;
+    max-height: 82px;
+    width: 100%;
+}
+
+#organization_message {
+    display: block;
+    width: 100%;
+/*background:url(../images/custom/whatnext_bg.png) repeat-x top left;*/
+    min-height: 343px;
+}
+
+#bd-recent-activity {
+    padding: 20px;
+    background-color: #ECECEC;
+    border-top: #C41230 solid 5px;
+    margin-top: 20px;
+/*display:none;*/
+    max-width: 610px;
+}
+
+#msg_cat_what_next_question {
+    padding-left: 10px;
+    padding-top: 10px;
+    display: none;
+}
+
+#msg_cat_progress_bar_title,#msg_cat_team_progress_bar_title {
+    display: none;
+}
+
+/*PROGRESS*/
+#msg_cat_personal_report_label {
+    padding-left: 10px;
+}
+
+.yui-skin-ux #report-chart,.yui-skin-ux #team-report-chart,.yui-skin-ux #company-report-chart {
+    height: 20em;
+    padding: 5px;
+}
+
+/*MILESTONES*/
+.iconMilesLeft {
+    float: left;
+    width: 60px;
+}
+
+.txtMilesRight {
+    float: left;
+    width: 125px;
+    margin-left: 3px;
+}
+
+.milesBox {
+    min-height: 112px;
+    margin-bottom: 5px;
+    max-width: 190px;
+    min-width: 190px;
+    width: 100%;
+}
+
+@media screen and max-width449px {
+    .iconMilesLeft {
+        float: none;
+        display: block;
+    }
+    
+    .txtMilesRight {
+        float: none;
+        display: block;
+        margin-left: 0;
+    }
+
+}
+
+@media screen and max-width 664px {
+    .wnTaskContent {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    #myIframe {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    #taskBox {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    #bd-recent-activity {
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+    
+    .wnContentBox {
+        margin-right: 2px;
+        margin-left: 2px;
+    }
+
+}
+
+@media screen and max-width 979px {
+    body {
+        background-image: none;
+    }
+    
+    .wnContentBox {
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    .wnTaskContent {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #myIframe {
+        max-width: 620px;
+        min-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #taskBox {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #bd-recent-activity {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /*SO Sidebar */
+    #SOADASidebar {
+        max-width: 979px !important;
+        float: none;
+        clear: both;
+        padding-top: 20px;
+        margin-top: 10px;
+    }
+    
+    #yui-main {
+        max-width: 979px !important;
+        min-width: 320px;
+        float: none;
+        clear: both;
+    }
+    
+    #msg_cat_nav_overview {
+        border-top-left-radius: 0 !important;
+        border-bottom-left-radius: 0 !important;
+    }
+    
+    #custom-logout-nav-link {
+        border-top-right-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+    }
+    
+    #CWLOGO {
+        position: relative;
+        display: block;
+        top: auto;
+        left: auto;
+        clear: both;
+        margin: 0;
+        margin-left: 10px;
+        height: 160px;
+        width: 240px;
+        padding: 0;
+    }
+    
+    #CWMYCENTERREG {
+        display: none;
+    }
+    
+    #CWMAINNAV {
+        position: relative;
+        clear: both;
+        display: block;
+        margin: 0;
+        max-width: 979px;
+        min-width: 320px;
+        width: 100%;
+        top: auto;
+        left: auto;
+    }
+    
+    #hd-nav {
+        display: none;
+    }
+    
+    #hd-nav li {
+        float: none;
+        display: block;
+        border-right: none;
+    }
+    
+    #dashboard-nav-link,#email-nav-link,#report-nav-link,#fundraising-tools-hdnav,#updateall-nav-link {
+    /*border-top:#FFFFFF solid 1px;*/
+    }
+    
+    #hd-nav a {
+        display: block;
+        text-align: left;
+        padding-left: 10px;
+        width: 100%;
+        max-width: 979px;
+        min-width: 320px;
+        text-decoration: none;
+        text-transform: uppercase;
+        height: 50px;
+        background: none;
+    /*background-color:#E7E7E7;*/
+    /*color:#676767;*/
+    /*color:#333333;*/
+        background-color: #000;
+        border-top: #CACACA solid 3px;
+        color: #FFF;
+        font-size: 14px !important;
+    }
+    
+    #hd-nav a:hover {
+        background-image: none !important;
+        background-repeat: no-repeat !important;
+        background-color: /*#C41230*/
+    #000;
+        color: #FFF !important;
+        border-top: #C41230 solid 3px;
+    }
+    
+    #hd-nav ul,#submenu_updt_pages,#submenu_cstm_tools {
+        max-width: 979px !important;
+        min-width: 320px !important;
+        position: relative !important;
+        clear: both;
+        top: 0 !important;
+        left: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .selected a#msg_cat_nav_overview,.selected a#msg_cat_nav_messaging,.selected a#msg_cat_nav_reports,.selected a#cstm-updateall-link,.selected a#custom-tools-link {
+        border-top: #C41230 solid 3px;
+        color: #FFF !important;
+    }
+    
+    .selected a#custom-fundraising-tools-link,.selected a#custom-training-tools-link,.selected a#custom-fundraising-tools-link,.selected a#custom-training-tools-link,.selected a#msg_cat_nav_team_page,.selected a#msg_cat_nav_public_page,.selected a#msg_cat_nav_company_page {
+        border-top: none;
+        color: #FFF !important;
+    }
+    
+    #custom-fundraising-tools-link a:hover,#custom-training-tools-link a:hover,#custom-fundraising-tools-link a:hover,#custom-training-tools-link a:hover,#msg_cat_nav_team_page a:hover,#msg_cat_nav_public_page a:hover,#msg_cat_nav_company_page a:hover {
+        border-top: none;
+    }
+    
+    #CWMENUTOGGLE {
+        display: block;
+        clear: both;
+        width: 100%;
+        background-color: #820E21;
+        height: 50px;
+        padding-top: 15px;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    #CWMYCENTERMOB {
+        display: block;
+        clear: both;
+        width: 100%;
+    /*background-color:#888888;*/
+        background-color: #000;
+        height: 50px;
+        padding-top: 15px;
+        color: #FFF;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    #CWHELPSHAREMOB,#CWHELPSHAREMOB2,#CWHELPSHAREMOB3,#CWHELPSHAREMOB4,#CWHELPSHAREMOB5 {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    #CWHELPSHAREREG {
+        display: none;
+    }
+
+}
+
+/*WHAT NEXT*/
+.clrBox {
+    clear: both;
+    height: 1px;
+}
+
+.wnContentBox {
+    position: relative;
+/*margin-right:auto; margin-left:auto;*/
+/*max-width:950px;*/
+    max-width: 650px;
+    min-width: 310px;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.wnTRWrapper {
+    position: relative;
+/*margin-right:auto; margin-left:auto;*/
+    max-width: /*700px*/
+610px;
+    min-width: 300px;
+    padding: 0;
+    margin-bottom: 0;
+    padding-left: 7px;
+}
+
+.taskNavItem,.taskNavItemNCC {
+    width: 175px;
+    height: 50px;
+    float: left;
+    margin-right: 25px;
+    cursor: pointer;
+    background-color: #999;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.taskNavNum,.taskNavNumNCC {
+    width: 45px;
+    height: 50px;
+    float: left;
+/*background-color:#999999;*/
+    color: #FFF;
+    text-align: center;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.taskNavTxt,.taskNavTxtNCC {
+    float: left;
+    width: 120px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    height: 50px;
+    text-transform: uppercase;
+    font-size: 17px;
+    font-weight: 700;
+/*background-color:#999999;*/
+    color: #FFF;
+}
+
+.tnnactive {
+    background-color: #C41230;
+}
+
+.tntactive {
+    color: #FFF;
+}
+
+.wnTaskContent {
+/*margin-top:10px;*/
+    position: relative;
+/*margin-right:auto; margin-left:auto;*/
+/*max-width:700px;*/
+    max-width: 610px;
+    min-width: 300px;
+    width: 95%;
+    border: #C41230 solid 5px;
+    border-radius: 10px;
+    margin-left: 0;
+}
+
+.taskImgLeft {
+    float: left;
+    margin-right: 15px;
+}
+
+.taskTxtContent {
+    min-width: 300px;
+}
+
+.mainBtnRed {
+    background-color: #C41230;
+    padding: 10px 20px;
+    color: #FFF;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.wnBottom {
+    max-width: 450px;
+    min-width: 300px;
+    float: left;
+    padding: 10px;
+    padding-top: 50px;
+}
+
+ul.toolLinks,#bd-org-html ul li {
+    list-style-type: none !important;
+}
+
+/*CWFOOTER*/
+#CWFOOTER {
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+/*max-width:950px;*/
+    max-width: 1000px;
+    min-width: 310px;
+    padding: 0;
+    margin-top: 50px;
+/*border-top:#CAEAF9 solid 1px;*/
+}
+
+.cwfootertxt {
+    font-size: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#cwfooterLeft {
+    float: left;
+    margin-right: 10px;
+    margin-left: 30px;
+    text-align: left;
+    max-width: 450px;
+    min-width: 300px;
+    width: 100%;
+    padding: 0;
+}
+
+#cwfooterRight {
+    float: right;
+    text-align: right;
+    max-width: 400px;
+    min-width: 300px;
+    width: 100%;
+    padding: 0;
+    margin-right: 20px;
+}
+
+@media screen and max-width909px {
+    #cwfooterLeft {
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        text-align: center;
+        max-width: 450px;
+        min-width: 300px;
+        width: 100%;
+        padding: 5px;
+    }
+    
+    #cwfooterRight {
+        float: none;
+        margin-right: auto;
+        margin-left: auto;
+        position: relative;
+        text-align: center;
+        max-width: 450px;
+        min-width: 300px;
+        width: 100%;
+        padding: 5px;
+    }
+
+}
+
+@media screen and max-width 899px {
+    /*.taskNavItem, .taskNavItemNCC{
+    /*width:100%;*/
+    /*width:98%;
+    max-width:710px;
+    height:50px;
+    float:none;
+    margin-right:0;
+    margin-bottom:5px;
+    cursor:pointer;
+    background-color:#999999;
+    border-top-left-radius:0;
+    border-top-right-radius:0;
+    }*/
+    .tnnactive {
+        background-color: #C41230;
+    }
+    
+    #organization_message {
+        background: none;
+    }
+    
+    .wnBottom {
+        max-width: 800px;
+    }
+    
+    #CWFOOTER {
+        margin-top: 50px;
+    }
+    
+    #email-content {
+        padding-bottom: 10px;
+    }
+
+}
+
+@media screen and max-width 599px {
+    .taskImgLeft {
+        float: none;
+        display: none;
+    }
+    
+    .taskTxtContent {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+}
+
+@media screen and max-width499px {
+    .yui-overlay,.yui-panel-container {
+        max-width: 300px !important;
+    }
+
+}
+
+/*EMAIL LINKS*/
+/*#msg_cat_compose_save_draft_button_label, #msg_cat_compose_delete_button_label, #msg_cat_compose_preview_button_label, #msg_cat_compose_save_template_button_label {
+display:block !important;
+}*/
+/*PHOTO VIDEO UPLOAD SPACING*/
+#photo-upload-form,#companypage-photo-upload-form,#teampage-photo-upload-form {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/*NAV MENU SELECTED*/
+.selected a#msg_cat_nav_overview,.selected a#msg_cat_nav_messaging,.selected a#msg_cat_nav_reports,.selected a#cstm-updateall-link,.selected a#custom-tools-link {
+/*background-image:none !important;
+background-color:#C41230;*/
+/*background-image:url(../images/custom/nav_bg_strip_hover.gif);
+	background-repeat:repeat-x;*/
+/*background-image:none !important;*/
+/*background-color:#000 !important;*/
+    border-top: #C41230 solid 5px;
+    color: #FFF !important;
+}
+
+.selected a#custom-fundraising-tools-link,.selected a#custom-training-tools-link,.selected a#msg_cat_nav_team_page,.selected a#msg_cat_nav_public_page,.selected a#msg_cat_nav_company_page {
+    border-top: none;
+    color: #FFF !important;
+}
+
+#custom-fundraising-tools-link a:hover,#custom-training-tools-link a:hover,#custom-fundraising-tools-link a:hover,#custom-training-tools-link a:hover,#msg_cat_nav_team_page a:hover,#msg_cat_nav_public_page a:hover,#msg_cat_nav_company_page a:hover {
+    border-top: none;
+}
+
+/* URL shortcut add box */
+.page-setting-detail,#contacts-showing {
+/*background-color:#FC6;*/
+    background-color: #ECECEC;
+/*border:#F93 solid 1px;*/
+    padding: 5px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#contacts-showing {
+    max-width: 500px !important;
+    min-width: 300px;
+}
+
+#contacts-list {
+    overflow: auto;
+    width: 100%;
+}
+
+#select-links {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0 !important;
+    float: none !important;
+    clear: both !important;
+    display: block !important;
+}
+
+#contacts-table-info-block {
+    max-width: /*500*/
+700px !important;
+    min-width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    padding: 0;
+    clear: both !important;
+    display: block !important;
+    float: none !important;
+}
+
+#yuievtautoid-0 {
+    margin: 0 !important;
+    width: 95% !important;
+}
+
+@media screen and max-width320px {
+    #yuievtautoid-0 {
+        max-width: 318px !important;
+    }
+    
+    #bd-recent-activity {
+        max-width: 320px !important;
+        min-width: 320px !important;
+        overflow: auto;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    #loading_progressbar,#wait .hd {
+        max-width: 270px !important;
+    }
+
+}
+
+/*drop down menu, there are more than one drop down so target the id individually*/
+/*#hd-nav ul {*/
+#submenu_updt_pages {
+    display: none;
+/* Sub menus are hidden by default */
+    position: absolute;
+    top: 50px;
+    left: 362px;
+/*float:left;*/
+    margin: 0;
+    padding: 0;
+    max-width: 120px;
+    min-width: 120px;
+    width: 100%;
+}
+
+#submenu_cstm_tools {
+    display: none;
+/* Sub menus are hidden by default */
+    position: absolute;
+    top: 50px;
+    left: 484px;
+/*float:left;*/
+    margin: 0;
+    padding: 0;
+    max-width: 120px;
+    min-width: 120px;
+    width: 100%;
+}
+
+#hd-nav li ul li {
+    margin: 0;
+/*clear:left;
+	float:left;*/
+    float: none;
+    clear: both;
+    width: 100%;
+}
+
+#hd-nav li:hover ul,#hd-nav li.hover ul {
+/* This line is required for IE 6 and below */
+    display: block;
+/* Show the sub menus */
+}
+
+/*SO Sidebar*/
+#SOEventBox {
+    font-weight: 700;
+    text-align: center;
+    width: 90%;
+    margin-top: 10px;
+}
+
+/*rounded UL menu*/
+#msg_cat_nav_overview {
+/*border-top-left-radius:7px;	
+border-bottom-left-radius:7px;*/
+}
+
+#custom-logout-nav-link {
+/*border-top-right-radius:7px;	
+border-bottom-right-radius:7px;*/
+}
+
+.wnTaskContentSeparator {
+/*height:40px;*/
+    background-color: #C41230;
+    width: 100%;
+/*max-width:700px;*/
+    max-width: 610px;
+    min-width: 300px;
+    color: #FFF;
+    padding: /*10px*/
+1em;
+    text-transform: capitalize;
+    font-size: /*16px*/
+1.5em;
+    font-weight: 700;
+}
+
+/*cycle*/
+#mySlideTask {
+    min-width: 300px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 591px;
+    z-index: 0;
+}
+
+#mySlideTask img {
+    width: 100%;
+    height: auto;
+}
+
+/*Important Message*/
+#fbMsg,#emailMsg,#captMsg,#sv1Msg,#sv2Msg {
+    font-weight: 700;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    min-height: 40px;
+}
+
+/*RECENT ACTIVITIES*/
+.yui-skin-ux #bd-recent-activity table {
+    font-size: .9em;
+    width: 100%;
+}
+
+.yui-skin-ux .recent-activity-donation,.yui-skin-ux .recent-activity-recruit,.yui-skin-ux .recent-activity-message {
+    background-color: #BBB;
+    color: #FFF;
+    padding: 2px 6px;
+    text-align: right;
+}
+
+.yui-skin-ux .yui-dt-liner {
+    padding: .2em .6em;
+}
+
+/*Message from Team Captain*/
+#msg_cat_captains_message_empty {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 5px !important;
+}
+
+#captainsMessage {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 240px;
+}
+
+/*HOME DASHBOARD CUSTOM*/
+.todoHeader {
+    background: url(../images/custom/todobg.gif) repeat-x;
+    height: 41px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.todoHeader img {
+    margin-left: 30px;
+}
+
+.todoContent {
+    display: none;
+    max-width: 650px;
+    min-width: 280px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+#vyf1,#vyf2,#vyf3,#vyf4,#vyf5,#vyf6,#vyf7,#viddesc1,#viddesc2,#viddesc3,#viddesc4,#viddesc5,#viddesc6,#viddesc7 {
+    display: none;
+}
+
+.todoLeft,.todoRight {
+    float: left;
+}
+
+.todoLeft {
+    margin-right: 8px;
+    max-width: 350px;
+    white-space: normal;
+    margin-left: 30px;
+}
+
+.todoRight {
+    padding-top: 12px;
+    padding-left: 8px;
+}
+
+.todoBtn {
+    background-color: #C41230;
+    color: #FFF;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 4px;
+    height: 30px;
+    display: block;
+    clear: both;
+    margin-bottom: 8px;
+    text-align: center;
+    width: 180px;
+    text-transform: lowercase !important;
+}
+
+a.todoBtn:hover,a.todoBtn:visited {
+    text-decoration: none;
+    color: #FFF;
+}
+
+#mySlideTask {
+    min-height: 103px;
+    max-height: 197px;
+}
+
+@media screen and max-width559px {
+    .todoLeft {
+        margin-left: 5px !important;
+        padding-bottom: 7px !important;
+    }
+    
+    .todoRight {
+        padding-left: 0 !important;
+    }
+
+}
+
+.milestone-title {
+    color: #666;
+    font-size: 1.1em;
+    margin-top: .75em;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.iframeHeader {
+    height: 40px;
+    background-color: #C41230;
+    width: 95%;
+    max-width: 730px;
+    min-width: 300px;
+    color: #FFF;
+    margin-top: 30px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.sideIcon {
+    float: left;
+/*width:43px*/
+    width: 50px;
+    padding-top: 15px;
+}
+
+.sideIconBadge {
+    float: left;
+/*width:43px*/
+    width: 50px;
+    padding-top: 7px;
+}
+
+.sideText {
+    float: left;
+    margin-left: 10px;
+    max-width: 180px;
+    padding-top: 15px;
+}
+
+/*SITEMAP*/
+#sitemap {
+    background-color: #333;
+/*display: none;*/
+    font-size: 11px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.sitemapItem {
+/*display:inline-block;*/
+    max-width: 110px;
+    min-width: 110px;
+    width: 100%;
+/*vertical-align: top;*/
+    float: left;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+@media screen and max-width764px {
+    .sitemapItem {
+        float: none !important;
+        clear: both !important;
+        display: block;
+        margin-left: 50px;
+    }
+
+}
+
+#sitemap ul {
+    list-style: none !important;
+}
+
+#sitemap li {
+    margin-bottom: 3px;
+    text-align: left;
+}
+
+#sitemap li a {
+    color: #FFF;
+    font-size: 11px;
+}
+
+#sitemap .header a {
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.header {
+    margin-bottom: 10px !important;
+    padding-bottom: 10px !important;
+    font-weight: 700;
+    font-size: 14px !important;
+}
+
+/*PRETTY UP*/
+#select-links {
+    background-color: #DDD;
+    padding-bottom: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    position: relative;
+    min-height: 50px;
+}
+
+#contacts-list-switch-tab div.selected {
+    background: none repeat scroll 0 0 #393E44;
+}
+
+#contacts-list-switch-tab a {
+    font-size: 1.2em;
+    margin-left: 0;
+    margin-right: 0;
+    outline: medium none;
+    padding: .75em .8em;
+    text-decoration: none;
+}
+
+#contacts-list-switch-tab div.selected a {
+    color: #FFF;
+}
+
+#contacts-list-switch-tab div {
+    background: url(../images/primary_action_left.gif) no-repeat scroll left center rgba(0,0,0,0);
+    border: 1px solid #393E44;
+    padding: .3em;
+}
+
+.yui-skin-ux .pagination_block {
+    background-color: #F4F5F5;
+    padding: .5em 0;
+    text-align: right;
+}
+
+.yui-skin-ux #contacts_pagination_block {
+    background-color: #F4F5F5;
+    padding: .3em 0;
+    min-height: 35px;
+}
+
+.yui-skin-ux #email-compose-salutation {
+    padding: 3px 3px 5px;
+}
+
+.yui-skin-ux #email-compose-prepend-salutation {
+    background: none repeat scroll 0 0 #EEE;
+    border-top: 1px solid #CCC;
+    margin: 0;
+    padding: 4px;
+}
+
+.yui-skin-ux #email-compose-content-actions {
+    background: none repeat scroll 0 0 #EEE;
+    margin: 0;
+    padding: 4px;
+}
+
+.yui-skin-ux .compose-section-name-field label {
+    padding-right: .3em;
+}
+
+.ux-block2 {
+    line-height: 1.35em;
+}
+
+.yui-skin-ux #email-contacts-content td .email-address {
+    color: #0090FF;
+    cursor: pointer;
+}
+
+.yui-skin-ux div .right-split {
+    float: right;
+    margin-right: 5px;
+}
+
+.yui-skin-ux .pagination_block .paginatorPageNumber {
+    float: right;
+}
+
+.yui-skin-ux .content-header div .left-split {
+    float: left;
+}
+
+.yui-skin-ux #contacts_pagination_block .pagination_block .paginatorContactSelector {
+    float: left;
+}
+
+.yui-skin-ux #contacts-table-info-block .full {
+    width: 100%;
+}
+
+.yui-skin-ux #group-list-content-block {
+    width: 40%;
+    position: relative;
+}
+
+.yui-skin-ux #contacts-table-info-block .partial {
+    width: 50%;
+    position: relative;
+    float: left !important;
+    margin-top: 0;
+}
+
+.yui-dt-odd {
+    background-color: #F0F0F0;
+}
+
+#contacts-actions {
+    clear: both !important;
+    float: none;
+    min-height: 70px;
+}
+
+#contacts-search-text {
+    width: 50px !important;
+}
+
+.yui-skin-ux .big-button-on {
+    background: none repeat scroll 0 0 #FFFFCD;
+    border-color: #FBDFA5;
+}
+
+.yui-skin-ux .big-button {
+    border: 2px solid;
+    border-radius: 1em;
+    margin: 1em 2em;
+    padding: .5em 1em;
+    width: 60%;
+    min-height: 70px;
+}
+
+.yui-skin-ux .big-button-off {
+    background: none repeat scroll 0 0 #FFF;
+    border-color: #DDD;
+}
+
+.yui-skin-ux .addressbookimport-flow-actions {
+    margin-right: 2em;
+    text-align: right;
+}
+
+.yui-skin-ux div#addressbookimport_selectsource_button_csv div.left {
+    float: left;
+}
+
+.yui-skin-ux div#addressbookimport_selectsource_button_csv div.right {
+    float: right;
+}
+
+.yui-skin-ux .smaller {
+    font-size: .8em;
+}
+
+.yui-skin-ux .content-header div .right-split {
+/*width:200px;*/
+    max-width: 325px;
+    width: 95%;
+    min-width: 300px;
+    text-align: right;
+}
+
+.yui-skin-ux .groups_menu_container .yuimenu li.first-of-type a {
+    border-bottom: 1px solid #E4E4E4;
+    padding: 4px;
+}
+
+/*ADD GROUP button*/
+button#groupsMenuButton-button {
+    background-color: transparent !important;
+    background: none !important;
+    color: #C41230 !important;
+    border: none;
+    border-radius: 0 !important;
+    margin: 0 !important;
+    padding: 8px !important;
+    border-right: 1px solid #DDD !important;
+}
+
+.yui-skin-ux #msg_cat_contacts_send_message_button,.yui-skin-ux #msg_cat_contact_details_compose,.yui-skin-ux #msg_cat_sent_message_forward_label,.yui-skin-ux #msg_cat_contacts_delete_button,.yui-skin-ux #msg_cat_contacts_email_all_button {
+    border-right: 1px solid #DDD;
+    padding: 8px;
+}
+
+.yui-skin-ux .content-header .search label {
+    display: block;
+}
+
+/*TEAM NAME SIDEBAR*/
+#teampage-sidebar {
+    background: none repeat scroll 0 0 #F0F0F0;
+    margin: 1.5em 0;
+    padding: 1em 1.5em;
+}
+
+/*Steps for Import Contact*/
+.yui-skin-ux ol.subnav {
+    background: none repeat scroll 0 0 #DDD;
+    border: medium none;
+    margin: 0 1em 1.5em;
+    padding: .5em 0;
+}
+
+.yui-skin-ux ol.subnav li {
+    border: 2px solid #FFF;
+    color: #0090FF;
+    list-style-position: inside;
+    list-style-type: decimal;
+    margin: .3em .5em;
+    padding: .2em 1.3em;
+}
+
+.yui-skin-ux ol.subnav li.wizard-next.selected {
+    color: #000;
+    opacity: 1;
+}
+
+.yui-skin-ux ol.subnav li.selected,.yui-skin-ux ol.subnav li.selected a,.yui-skin-ux ol.subnav li.selected span {
+    background: none repeat scroll 0 0 #FFFFCD;
+    border-color: #FBDFA5;
+}
+
+.yui-skin-ux #captainsMessageEditText {
+    display: block;
+    height: 15em;
+    margin-bottom: 1em;
+/*width: 100%;*/
+    width: 95%;
+}
+
+#addressbookimport_selectsource_button_csv {
+    min-height: 100px;
+    height: auto;
+}
+
+/*Email prettying up further 02052014*/
+.yui-skin-ux #send-info-table tr {
+    padding: 50px;
+}
+
+.yui-skin-ux #email-compose-salutation {
+    background: none repeat scroll 0 0 #F1F7F8;
+    padding: 3px 3px 5px;
+}
+
+.yui-skin-ux #email-compose-top {
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.yui-skin-ux #email-layout-selected {
+    background: none repeat scroll 0 0 #EEE;
+    color: #777;
+    margin: 0 1px;
+    outline: 1px solid #CCC;
+    padding-left: 3px;
+}
+
+#email-compose-content-actions a {
+    padding: 8px;
+}
+
+#send-info-table td {
+    padding: 5px;
+}
+
+.yui-skin-ux .media {
+    background: none repeat scroll 0 0 #EEE;
+    padding: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.yui-skin-ux .thumbnail {
+    float: left;
+    width: 125px;
+}
+
+.yui-skin-ux .media form {
+    margin-left: 10px;
+    float: left;
+}
+
+.yui-skin-ux .no-image {
+    background: none repeat scroll 0 0 #E6E6E6;
+    color: #999;
+    float: left;
+    font-size: .9em;
+    padding: 40px 0;
+    text-align: center;
+    width: 125px;
+}
+
+.yui-skin-ux .media .browse,.yui-skin-ux .media .caption {
+    margin-bottom: .5em;
+}
+
+/*RED PROGRESS BAR*/
+.ui-progressbar .ui-progressbar-value {
+    background: /*#5C9CCC*/
+none repeat scroll 0 0 #C41230 !important;
+    height: 100%;
+    margin: -1px;
+    max-width: 95%;
+}
+
+.ui-progressbar {
+    background: /*#D7FCFD*/
+none repeat scroll 0 0 #FFF !important;
+    border-color: /*#5C9CCC*/
+/*#C41230*/
+transparent !important;
+    height: 2em;
+    text-align: left;
+}
+
+/* TOUR ROTATOR */
+/*TASK ROTATOR*/
+#taskBox {
+    max-width: 610px;
+    max-height: 450px;
+    min-width: 610px;
+    min-height: 450px;
+    background: url(../../ws/tr/tr2014/img/pc2/task_1_false_bg.jpg) no-repeat;
+/*margin-left:auto; margin-right:auto;*/
+}
+
+#rtLeft {
+    max-width: 250px;
+    width: 250px;
+    min-width: 250px;
+    max-height: 440px;
+    min-height: 440px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    float: left;
+}
+
+#rtRight {
+    max-width: 340px;
+    width: 340px;
+    min-width: 340px;
+    max-height: 260px;
+    min-height: 260px;
+    margin-top: 180px;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    float: right;
+}
+
+#rtL1,#rtL2,#rtL3,#rtL4,#rtL5 {
+    min-height: 66px;
+    max-height: 66px;
+    margin-left: 10px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    clear: both;
+}
+
+.taskNumImg {
+    max-width: 55px;
+    max-height: 55px;
+    min-width: 55px;
+    min-height: 55px;
+    height: 55px;
+    width: 55px;
+    float: left;
+    margin-top: 3px;
+}
+
+.taskMenuTXT,.taskMenuTXT2L {
+    max-width: 160px;
+    min-width: 160px;
+    color: #FFF;
+    float: left;
+    margin-left: 10px;
+    font-size: 16px;
+/*font-weight:bold;*/
+    white-space: normal;
+    text-transform: uppercase;
+}
+
+.taskMenuTXT {
+    margin-top: 15px;
+}
+
+.taskMenuTXT2L {
+    margin-top: 8px;
+}
+
+.slogan {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
